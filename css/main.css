@@ -90,15 +90,11 @@ h1 a:hover, a:visited, a:link, a:active
 
 /* my work */
 .work-btn {
-  width:100%;
-  padding:100px 0;
-  margin:20px 0px;
-  text-transform: uppercase;
-  font-weight: 600;
-  letter-spacing: 2px;
-  font-size: 14px;
-  line-height:20px;
-  border:none;
+  width: 100%;
+  padding: 100px 0;
+  margin: 10px 0px;
+  border: none;
+  float: left;
 }
 
 .work-rtd {
@@ -111,6 +107,12 @@ h1 a:hover, a:visited, a:link, a:active
 
 .work-0 {
   background: url("../img/work-0.jpg") no-repeat;
+  border: 1px solid #dddddf; 
+  margin-bottom: 100px;
+}
+
+.work-rnr {
+  background: url("../img/work-rnr.jpg") no-repeat;
   border: 1px solid #dddddf; 
   margin-bottom: 100px;
 }
@@ -166,7 +168,7 @@ button.close {
 
 .social {
   list-style-type: none;
-  padding: 30px;
+  padding: 20px;
   float: left;
 
 }
@@ -175,9 +177,17 @@ button.close {
 
 /* Custom page footer */
 .footer {
-  padding-top: 19px;
+/*  padding-top: 19px;*/
   color: #777;
-  border-top: 1px solid #e5e5e5;
+  text-align: center;
+}
+
+.site-footer {
+  text-align: center;
+  margin-top: 40px;
+  background-color: #dddddf;
+  padding-top: 20px;
+  margin-bottom: -50px;
 }
 
 /* Customize container */
@@ -239,6 +249,7 @@ button.close {
   }
 }
 
+
 @media (min-width: 768px) {
   /* Pull out the header and footer */
   .masthead {
@@ -258,6 +269,7 @@ button.close {
   .mastfoot,
   .container {
     width: 600px;  Must be percentage or pixels for horizontal alignment 
+    position: center;
   }
 }
 
