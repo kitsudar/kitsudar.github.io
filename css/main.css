@@ -91,30 +91,34 @@ h1 a:hover, a:visited, a:link, a:active
 /* my work */
 .work-btn {
   width: 100%;
-  padding: 100px 0;
-  margin: 10px 0px;
+  padding: 120px 10px;
+  margin: 20px 0px;
   border: none;
-  float: left;
+  display: inline-block;
 }
 
 .work-rtd {
   background: url("../img/work-rtd.jpg") no-repeat;
 }
 
+.work-preopen {
+  background: url("../img/work-preopen.jpg") no-repeat;
+}
+
 .work-daravadee {
   background: url("../img/work-daravadee.jpg") no-repeat; 
 }
 
+.work-od {
+  background: url("../img/work-od.jpg") no-repeat;
+}
+
 .work-0 {
   background: url("../img/work-0.jpg") no-repeat;
-  border: 1px solid #dddddf; 
-  margin-bottom: 100px;
 }
 
 .work-rnr {
   background: url("../img/work-rnr.jpg") no-repeat;
-  border: 1px solid #dddddf; 
-  margin-bottom: 100px;
 }
 
 .modal-dialog {
@@ -235,6 +239,7 @@ button.close {
   /* Remove the padding we set earlier */
   .header,
   .marketing,
+  .work-btn
   .footer {
     padding-right: 0;
     padding-left: 0;
@@ -268,8 +273,7 @@ button.close {
   .masthead,
   .mastfoot,
   .container {
-    width: 600px;  Must be percentage or pixels for horizontal alignment 
-    position: center;
+    width: 700px;  Must be percentage or pixels for horizontal alignment 
   }
 }
 
