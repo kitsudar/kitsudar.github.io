@@ -121,6 +121,14 @@ h1 a:hover, a:visited, a:link, a:active
   background: url("../img/work-rnr.jpg") no-repeat;
 }
 
+.work-bike {
+  background: url("../img/work-bike.png") no-repeat;
+}
+
+.work-zcard {
+  background: url("../img/work-zcard.jpg") no-repeat;
+}
+
 .modal-dialog {
   width: 100%;
   max-width:1050px;
