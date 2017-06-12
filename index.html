@@ -21,6 +21,36 @@
   </head>
 
   <body>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-6">
+          <h1><a data-scroll-nav="0" href="index.html">design<span class="kit">kit</a></h1>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-6">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav masthead-nav pull-right">
+                  <li><a data-scroll-nav="1" href="about.html">about</a></li>
+                  <li><a data-scroll-nav="2" href="portfolio.html">my work</a></li>
+                  <li><a data-scroll-nav="3" href="contact.html">contact</a></li>
+              </ul>
+              
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+<!-- 
    <nav class="navbar navbar-default navbar-fixed-top"> 
     <div class="container">
       <div class="header clearfix">
@@ -32,13 +62,18 @@
         <h1><a data-scroll-nav="0" href="index.html">design<span class="kit">kit</a></h1>
       </div>
     </div>
-    </nav>
+    </nav>-->
     <div data-scroll-index="0">
       <div class="jumbotron">
         <div class="container">
           <img src="img/medical-icon.png" alt="Design Kit Icon" />
             <h4>design kit includes:</h4></br></br>
             <div class="row">
+              <div class="col-sm-4">
+                <img src="img/ux-ui.png" alt="UX/UI Icon" />
+                <h5>UX/UI</h5>
+                <p>An advocate for what users want, need, and expect from the products.</p> 
+              </div>
               <div class="col-sm-4">
                 <img src="img/web-brush.png" alt="Web Design Icon" />
                 <h5>Design</h5>
@@ -49,150 +84,444 @@
                 <h5>Develop</h5>
                 <p>Strive to use web standards to build solutions using semantic markup and CSS.</p>
               </div>
-              <div class="col-sm-4">
-                <img src="img/ux-ui.png" alt="UX/UI Icon" />
-                <h5>UX/UI</h5>
-                <p>An advocate for what users want, need, and expect from the products.</p> 
-              </div>
             </div>
         </div>
       </div>
+      <img src="img/workspace.jpg" alt="workspace image" class="img-responsive workspace-pic" />
     </div>
 
     <div data-scroll-index="1">
       <div class="container">
         <div class="row marketing">
-            <span class="profile-pic"><img src="img/profile_pic.jpg" class="img-responsive" alt="Kitsudar's profile picture">
-            <h3>about me</h3>
-            <p>Hello. My name is Kitsudar (it's Thai in case you're wondering), I go by "Kit" for short. I'm a fulltime/freelance designer based in Denver, Colorado. I enjoy design + code + problem solving. I believe in life-long learning. My work is clean, modern yet functional. I care about the end-user and their experience.<br />
-          I'm always looking for new creative opportunities, including pro bono/non-profit. Please drop me a line to get in touch or to just say "Hi".</p></br>
-          <a href="kitsudar-resume.pdf" target="_blank"><h4>Download my resume</h4></a>
+          <h3 class="text-center margin-bottom-md">about me</h3>
+          <div class="col-md-4 col-sm-12 col-xs-12">
+            <span class="profile-pic"><img src="img/profile_pic.jpg" class="img-circle center-block profile-pic" alt="Kitsudar's profile picture">
+          </div>
+          <br />
+          <div class="col-md-8 col-sm-12 col-xs-12">
+            <p>Hello there, my name is Kit. I'm a fulltime/freelance designer based in Denver, Colorado. I enjoy visual and interaction design, coding web pages, and most importantly, solving problem. I believe in life-long learning and keeping up with the design trends. On my free time I enjoy staying active by being outdoor, going to the gym and spending time with my 5 year old twins. I also like to travel whenever I can. I'm open to a freelance opportunity and I would love to hear from you.</p>
+            <a href="kitsudar-resume.pdf" target="_blank"><h4>Download my resume</h4></a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <h3 class="text-center margin-top-lg">my skills</h3>
+            <br />
+            <div class="skillbar clearfix " data-percent="95%">
+              <div class="skillbar-title" style="background: #067e99;"><span>Adobe CC</span></div>
+              <div class="skillbar-bar" style="background: #07a0c3;"></div>
+              <div class="skill-bar-percent">95%</div>
+            </div> <!-- End Skill Bar -->
+
+            <div class="skillbar clearfix " data-percent="90%">
+              <div class="skillbar-title" style="background: #ba9c05;"><span>HTML5</span></div>
+              <div class="skillbar-bar" style="background: #f0c808;"></div>
+              <div class="skill-bar-percent">90%</div>
+            </div> <!-- End Skill Bar -->
+
+            <div class="skillbar clearfix " data-percent="85%">
+              <div class="skillbar-title" style="background: #72CCB4;"><span>CSS3</span></div>
+              <div class="skillbar-bar" style="background: #80E5C8;"></div>
+              <div class="skill-bar-percent">85%</div>
+            </div> <!-- End Skill Bar -->
+
+            <div class="skillbar clearfix " data-percent="75%">
+              <div class="skillbar-title" style="background: #a81614;"><span>jQuery</span></div>
+              <div class="skillbar-bar" style="background: #dd1c1a;"></div>
+              <div class="skill-bar-percent">75%</div>
+            </div> <!-- End Skill Bar -->
+
+            <div class="skillbar clearfix " data-percent="90%">
+              <div class="skillbar-title" style="background: #06516b;"><span>Bootstrap</span></div>
+              <div class="skillbar-bar" style="background: #086788;"></div>
+              <div class="skill-bar-percent">90%</div>
+            </div> <!-- End Skill Bar -->
+
+            <div class="skillbar clearfix " data-percent="75%">
+              <div class="skillbar-title" style="background: #5D737E;"><span>After Effects CC</span></div>
+              <div class="skillbar-bar" style="background: #91B3C4;"></div>
+              <div class="skill-bar-percent">75%</div>
+            </div> <!-- End Skill Bar -->
+          </div>           
         </div>
       </div>
     </div>
-
     <div data-scroll-index="2">
-      <div class="container">
-        <h3>my work</h3>
-        <div class="row">
-          <div class="col-sm-6">
-            <button type="button" class="work-btn work-rtd" data-toggle="modal" data-target=".rtd"></button>
+      <div class="container-work">
+        <h3 class="text-center">my work</h3>
+        <br />
+        <div class="row margin-none">
+          <div class="col-sm-3 padding-none">
+            <a href="#" class="work-btn" data-toggle="modal" data-target=".scramApp"><img src="img/work-officerApp.jpg" class="img-responsive work-img" />
+              <p class="imgDescription text-center">SCRAMnet Mobile App</p>
+            </a>
+            <div class="modal fade scramApp" data-dismiss="modal" tabindex="-1" role="dialog" aria-labelledby="rtd" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <button type="button" data-dismiss="modal" class="close">x</button>
+                  <h4>SCRAMnet Mobile App</h4>
+                  <p>Design and Front-End Development</p>
+                  <div class="row">
+                    <div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12">
+                      <i>First mobile application for the company as an extension to the desktop experience. The app was built in a mobile container and serves up pages for both iOS and Andriod. Designed and coded mobile-first HTML and CSS to support the mobile developers. Prepared screenshots and icons for the app stores submission. The app is available on App Store and Google Play store.</i>
+                    </div>
+                  </div>
+                  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    </ol>
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                      <div class="item active">
+                        <img src="img/officerApp-inUse.jpg" class="img-responsive" alt="Officer App Mock Up">
+                      </div>
+                      <div class="item">
+                        <img src="img/officerApp-screens.jpg" class="img-responsive center-block" alt="Officer App Screens">
+                      </div>
+                    </div>
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>  
+          </div>
+          <div class="col-sm-3 padding-none">
+            <a href="#" class="work-btn" data-toggle="modal" data-target=".optix"><img src="img/work-optix.jpg" class="img-responsive work-img" />
+              <p class="imgDescription text-center">Optix Platform</p>
+            </a>
+            <div class="modal fade optix" data-dismiss="modal" tabindex="-1" role="dialog" aria-labelledby="rtd" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <button type="button" data-dismiss="modal" class="close">x</button>
+                  <h4>Optix</h4>
+                  <p>Branding, Design and Front-End Development</p>
+                  <div class="row">
+                    <div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12">
+                      <i>Designed the visual and interactive components of Optix. Optix was designed to surface information from different underlying applications with a modern interface. Optix provides a way for users to manage, access and navigate into the current system applications.</i>
+                    </div>
+                  </div>                 
+                  <div id="carousel-example-generic-2" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carousel-example-generic-2" data-slide-to="0" class="active"></li>
+                      <li data-target="#carousel-example-generic-2" data-slide-to="1"></li>
+                      <li data-target="#carousel-example-generic-2" data-slide-to="2"></li>
+                    </ol>
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                      <div class="item active">
+                        <img src="img/optix-suite.jpg" class="img-responsive" alt="Optix Mock Up">
+                      </div>
+                      <div class="item">
+                        <img src="img/optix-acquire.jpg" class="img-responsive center-block" alt="Optix Acquire Tab">
+                      </div>
+                      <div class="item">
+                        <img src="img/optix-act.jpg" class="img-responsive center-block" alt="Optix Act Tab">
+                      </div>
+                    </div>
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-example-generic-2" role="button" data-slide="prev">
+                      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic-2" role="button" data-slide="next">
+                      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>  
+          </div>
+          <div class="col-sm-3 padding-none">
+            <a href="#" class="work-btn" data-toggle="modal" data-target=".report"><img src="img/work-graphicReport.jpg" class="img-responsive work-img" />
+              <p class="imgDescription text-center">Grapical Reports</p>
+            </a>
+            <div class="modal fade report" data-dismiss="modal" tabindex="-1" role="dialog" aria-labelledby="rtd" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <button type="button" data-dismiss="modal" class="close">x</button>
+                  <h4>Graphical Reporting</h4>
+                  <p>Design</p>
+                  <div class="row">
+                    <div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12 margin-bottom-md">
+                      <i>With massive amount of data from the products and services the company provides, we needed a way to communicate the data effectively by telling a story and making the data easy to understand. I worked with the report writer/developer and designed a template to use in SSRS where data are pulled in to generate the reports.</i>
+                    </div>
+                  </div>               
+                  <div id="carousel-example-generic-3" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carousel-example-generic-3" data-slide-to="0" class="active"></li>
+                      <li data-target="#carousel-example-generic-3" data-slide-to="1"></li>
+                      <li data-target="#carousel-example-generic-3" data-slide-to="2"></li>
+                    </ol>
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                      <div class="item active">
+                        <img src="img/Court-Reports1.jpg" class="img-responsive center-block court-report" alt="Court Report 1">
+                      </div>
+                      <div class="item">
+                        <img src="img/Court-Reports2.jpg" class="img-responsive center-block court-report" alt="Court Report 2">
+                      </div>
+                      <div class="item">
+                        <img src="img/Court-Reports3.jpg" class="img-responsive center-block court-report" alt="Court Report 3">
+                      </div>
+                    </div>
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-example-generic-3" role="button" data-slide="prev">
+                      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic-3" role="button" data-slide="next">
+                      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>  
+          </div>
+          <div class="col-sm-3 padding-none">
+          <a href="#" class="work-btn work-rtd" data-toggle="modal" data-target=".rtd"><img src="img/work-rtd.jpg" class="img-responsive work-img" />
+            <p class="imgDescription text-center">RTD Responsive Website</p>
+          </a>
             <div class="modal fade rtd" data-dismiss="modal" tabindex="-1" role="dialog" aria-labelledby="rtd" aria-hidden="true">
                 <div class="modal-dialog modal-lg">
                   <div class="modal-content">
                     <button type="button" data-dismiss="modal" class="close">x</button>
                     <h4>RTD Responsive Design</h4>
                     <p>Code Production</p>
-                    <i>I worked on converting the RTD main site to be responsive by the combination of fluid images, fluid grids, and media queries.</br> I used digital style guide with similar framework as Bootstrap to convert web pages to be responsive.</i>
-                    <img src="img/screen-mallRide.jpg" class="img-responsive" alt="MallRide Page Mock Up">
-                    <img src="img/ticket-vending.jpg" class="img-responsive" alt="Ticket Vending Page">
-                    <img src="img/how-to-ride-bus.jpg" class="img-responsive" alt="How to Ride Bus Page">
+                    <div class="row">
+                      <div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12 margin-bottom-md">
+                        <i>Worked on converting the RTD main site to be responsive by the combination of fluid images, fluid grids, and media queries. Used digital style guide with similar framework as Bootstrap to convert web pages to be responsive.</i>
+                      </div>
+                    </div>                  
+                    <div id="carousel-example-generic-4" class="carousel slide" data-ride="carousel">
+                      <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic-4" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic-4" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic-4" data-slide-to="2"></li>
+                      </ol>
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                          <img src="img/screen-mallRide.jpg" class="img-responsive" alt="MallRide Page Mock Up">
+                        </div>
+                        <div class="item">
+                          <img src="img/ticket-vending.jpg" class="img-responsive center-block" alt="Ticket Vending Page">
+                        </div>
+                        <div class="item">
+                          <img src="img/how-to-ride-bus.jpg" class="img-responsive center-block" alt="How to Ride Bus Page">
+                        </div>
+                      </div>
+                      <!-- Controls -->
+                      <a class="left carousel-control" href="#carousel-example-generic-4" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="right carousel-control" href="#carousel-example-generic-4" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>  
-            </div>
-
-        <div class="col-sm-6">
-          <button type="button" class="work-btn work-preopen" data-toggle="modal" data-target=".preopen"></button>
-            <div class="modal fade preopen" data-dismiss="modal" tabindex="-1" role="dialog" aria-labelledby="preopen" aria-hidden="true">
+          </div>
+        </div>
+        <div class="row margin-none">
+          <div class="col-sm-3 padding-none">
+            <a href="#" class="work-btn work-preopen" data-toggle="modal" data-target=".preopen"><img src="img/work-preopen.jpg" class="img-responsive work-img" />
+              <p class="imgDescription text-center">Rail Lines Opening Campaigns</p>
+            </a>
+              <div class="modal fade preopen" data-dismiss="modal" tabindex="-1" role="dialog" aria-labelledby="preopen" aria-hidden="true">
                 <div class="modal-dialog modal-lg">
                   <div class="modal-content">
                     <button type="button" data-dismiss="modal" class="close">x</button>
                     <h4>Pre-opening of 4 rail lines in 2016</h4>
                     <p>Web page design</p>
-                    <i>I took the print concept of the pre-opening campaign and translated into digital form.</br> The site will be visually appealing and engaging to the visitors. It will provide an extension of the print campaign while educating the public about the rail lines.</i>
-                    <img src="img/preopen.jpg" class="img-responsive" alt="Pre opening Mock Up">
-                  </div>
-                </div>
-            </div>  
-        </div>
-
-          <div class="col-sm-6">
-            <button type="button" class="work-btn work-od" data-toggle="modal" data-target=".outfitdiary"></button>
-              <div class="modal fade outfitdiary" data-dismiss="modal" tabindex="-1" role="dialog" aria-labelledby="Outfit Diary Mobile App" aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-                  <div class="modal-content">
-                    <button type="button" data-dismiss="modal" class="close">x</button>
-                    <h4>Outfit Diary Mobile App</h4>
-                    <p>Mobile App Wireframe</p>
-                    <i>Having a hard time deciding what to wear?</br> Outfit Diary will help keep track of your clothes to organize your closet and plan your outfits.</br> With its simple user interface, this app will deliver a top-notch user experience.</i></br>
-                    <img src="img/outfitdiary.jpg" class="img-responsive" alt="New Schedule Route 0">
+                    <div class="row">
+                      <div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12 margin-bottom-md">
+                        <i>I took the print concept of the pre-opening campaign and translated into digital form. The site will be visually appealing and engaging to the visitors. It will provide an extension of the print campaign while educating the public about the rail lines.</i>
+                      </div>
+                    </div>                 
+                    <div id="carousel-example-generic-5" class="carousel slide" data-ride="carousel">
+                      <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic-5" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic-5" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic-5" data-slide-to="2"></li>
+                      </ol>
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                          <img src="img/preopen-1.jpg" class="img-responsive center-block preopen-work" alt="Preopen Main Page">
+                        </div>
+                        <div class="item">
+                          <img src="img/preopen-2.jpg" class="img-responsive center-block preopen-work" alt="Preopen A Line">
+                        </div>
+                        <div class="item">
+                          <img src="img/preopen-3.jpg" class="img-responsive center-block preopen-work" alt="Preopen G Line">
+                        </div>
+                      </div>
+                      <!-- Controls -->
+                      <a class="left carousel-control" href="#carousel-example-generic-5" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="right carousel-control" href="#carousel-example-generic-5" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>  
             </div>
-
-
-            <div class="col-sm-6">
-              <button type="button" class="work-btn work-daravadee" data-toggle="modal" data-target=".daravadee"></button>
-                <div class="modal fade daravadee" data-dismiss="modal" tabindex="-1" role="dialog" aria-labelledby="Daravadee Spa" aria-hidden="true">
-                  <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                      <button type="button" data-dismiss="modal" class="close">x</button>
-                      <h4>Daravadee Spa Website</h4>
-                      <p>Design + Development</p>
-                      <i>The site provides a firsthand experience of being at the spa, it is the driving force behind the business.</br> The website sets the brand and draws in new customers with the inviting, warm earth-tone color schemes of a high-end spa.</i></br>
-                      <a href="http://daravadeespa.com/" target="blank"> daravadeespa.com</a>
-                      <img src="img/daravadee-page1.jpg" class="img-responsive" alt="daravadee spa pg1">
-                      <img src="img/daravadee-page2.jpg" class="img-responsive" alt="daravadee spa pg1">
-                      <img src="img/daravadee-page3.jpg" class="img-responsive" alt="daravadee spa pg1">
+            <div class="col-sm-3 padding-none">
+              <a href="#" class="work-btn work-daravadee" data-toggle="modal" data-target=".daravadee"><img src="img/work-daravadee.jpg" class="img-responsive work-img" />
+                <p class="imgDescription text-center">Daravadee Spa Website</p>
+              </a>
+              <div class="modal fade daravadee" data-dismiss="modal" tabindex="-1" role="dialog" aria-labelledby="Daravadee Spa" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <button type="button" data-dismiss="modal" class="close">x</button>
+                    <h4>Daravadee Spa Website</h4>
+                    <p>Design + Development</p>
+                    <div class="row">
+                      <div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12 margin-bottom-md">
+                        <i>The site provides a firsthand experience of being at the spa, it is the driving force behind the business. The website sets the brand and draws in new customers with the inviting, warm earth-tone color schemes of a high-end spa.</i>
+                        <a href="http://daravadeespa.com/" target="blank"> daravadeespa.com</a>
+                      </div>
+                    </div>
+                    <div id="carousel-example-generic-6" class="carousel slide" data-ride="carousel">
+                      <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic-6" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic-6" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic-6" data-slide-to="2"></li>
+                      </ol>
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                          <img src="img/daravadee-mock.jpg" class="img-responsive center-block preopen-work" alt="Daravadee Spa Laptop">
+                        </div>
+                        <div class="item">
+                          <img src="img/daravadee-page2.jpg" class="img-responsive center-block preopen-work" alt="Daravadee Spa Page">
+                        </div>
+                        <div class="item">
+                          <img src="img/daravadee-page3.jpg" class="img-responsive center-block preopen-work" alt="Daravadee Spa Page">
+                        </div>
+                      </div>
+                      <!-- Controls -->
+                      <a class="left carousel-control" href="#carousel-example-generic-6" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="right carousel-control" href="#carousel-example-generic-6" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
                     </div>
                   </div>
-                </div>  
+                </div>
               </div>  
-
-            <div class="col-sm-6">
-            <button type="button" class="work-btn work-0" data-toggle="modal" data-target=".schedule"></button>
+            </div>
+            <div class="col-sm-3 padding-none">
+            <a href="#" class="work-btn work-0" data-toggle="modal" data-target=".schedule"><img src="img/work-0.jpg" class="img-responsive work-img" />
+              <p class="imgDescription text-center">Transit Schedule Redesign</p>
+            </a>
               <div class="modal fade schedule" data-dismiss="modal" tabindex="-1" role="dialog" aria-labelledby="Schedule Redesign" aria-hidden="true">
                 <div class="modal-dialog modal-lg">
                   <div class="modal-content">
                     <button type="button" data-dismiss="modal" class="close">x</button>
                     <h4>RTD Schedule Redesign</h4>
                     <p>Design</p>
-                    <i>Redesigned the base system information platforms for RTD users including - bus stop signs, schedules and shelter boards.</br> Focused on the user experience through the redesign process. A focus group of RTD riders provided their feedbacks to help further improve the products.</i></br>
-                    <img src="img/0-new.jpg" class="img-responsive" alt="New Schedule Route 0">
-                    <img src="img/0-new2.jpg" class="img-responsive" alt="New Schedule Route 0">
+                    <div class="row">
+                      <div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12 margin-bottom-md">
+                        <i>Redesigned the base system information platforms for RTD users including - bus stop signs, schedules and shelter boards. Focused on the user experience through the redesign process. A focus group of RTD riders provided their feedbacks to help further improve the products.</i>
+                      </div>
+                    </div>
+                    <div id="carousel-example-generic-7" class="carousel slide" data-ride="carousel">
+                      <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic-7" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic-7" data-slide-to="1"></li>
+                      </ol>
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                          <img src="img/0-new.jpg" class="img-responsive center-block preopen-work" alt="RTD Schedule">
+                        </div>
+                        <div class="item">
+                          <img src="img/0-new2.jpg" class="img-responsive center-block preopen-work" alt="RTD Schedule">
+                        </div>
+                      </div>
+                      <!-- Controls -->
+                      <a class="left carousel-control" href="#carousel-example-generic-7" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="right carousel-control" href="#carousel-example-generic-7" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>  
             </div>
-      
-          <div class="col-sm-6">
-            <button type="button" class="work-btn work-rnr" data-toggle="modal" data-target=".rnr"></button>
-            <div class="modal fade rnr" data-dismiss="modal" tabindex="-1" role="dialog" aria-labelledby="Schedule Redesign" aria-hidden="true">
+            <div class="col-sm-3 padding-none">
+              <a href="#" class="work-btn work-rnr" data-toggle="modal" data-target=".rnr"><img src="img/work-rnr.jpg" class="img-responsive work-img" />
+                <p class="imgDescription text-center">Read-n-Ride eNewsletter</p>
+              </a>
+              <div class="modal fade rnr" data-dismiss="modal" tabindex="-1" role="dialog" aria-labelledby="Schedule Redesign" aria-hidden="true">
                 <div class="modal-dialog modal-lg">
                   <div class="modal-content">
                     <button type="button" data-dismiss="modal" class="close">x</button>
-                    <h4>RTD Read-n-Ride Newsletter</h4>
+                    <h4>RTD Read-n-Ride eNewsletter</h4>
                     <p>HTML E-mail Coding</p>
                     <i>Coded RTD monthly newsletter using HTML best email practices.</i>
-                    <img src="img/rnr-dec.jpg" class="img-responsive" alt="Read-n-Ride December">
+                    <a href="#" class="center-block demo-link">
+                      <span class="layout">
+                        <img src="img/rnr-dec.jpg" class="img-responsive center-block" alt="Read-n-Ride December">
+                      </span>
+                      <img src="img/frame.png" class="img-responsive center-block frame" alt="Read-n-Ride December" />
+                    </a>
                   </div>
                 </div>
               </div>
+            </div>
           </div>
-
-          <div class="col-sm-6">
-            <button type="button" class="work-btn work-bike" data-toggle="modal" data-target=".bike"></button>
-            <div class="modal fade bike" data-dismiss="modal" tabindex="-1" role="dialog" aria-labelledby="Bike to Work day" aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-                  <div class="modal-content">
-                    <button type="button" data-dismiss="modal" class="close">x</button>
-                    <h4>Bike to Work Day</h4>
-                    <p>Event Design</p>
-                    <i>A hip, modern playful, unifying graphic and message cleverly leveraged the popularity of biking and the outdoors in Colorado</br> to draw people to the event, and was translated to ads, transfluxes on light rail, as well as FaceBook posts and homepage rotator ads on our website.</br> At the booth, visitors received similarly branded t shirts and bike lights. </i>
-                    <img src="img/bike1.png" class="img-responsive" alt="Bike Ad">
-                    <img src="img/bike2.png" class="img-responsive" alt="Bike Social Media">
-                    <img src="img/bike3.jpg" class="img-responsive" alt="Bike Event Day">
-                    <img src="img/bike4.jpg" class="img-responsive" alt="Bike Giveaway Items">
+          <div class="row margin-none">
+            <div class="col-sm-3 padding-none">
+              <a href="#" class="work-btn work-bike" data-toggle="modal" data-target=".bike"><img src="img/work-bike.png" class="img-responsive work-img" />
+                <p class="imgDescription text-center">Bike to Work Day Campaign</p>
+              </a>
+              <div class="modal fade bike" data-dismiss="modal" tabindex="-1" role="dialog" aria-labelledby="Bike to Work day" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <button type="button" data-dismiss="modal" class="close">x</button>
+                      <h4>Bike to Work Day</h4>
+                      <p>Event Design</p>
+                      <i>A hip, modern playful, unifying graphic and message cleverly leveraged the popularity of biking and the outdoors in Colorado</br> to draw people to the event, and was translated to ads, transfluxes on light rail, as well as FaceBook posts and homepage rotator ads on our website.</br> At the booth, visitors received similarly branded t shirts and bike lights. </i>
+                      <img src="img/bike1.png" class="img-responsive" alt="Bike Ad">
+                      <img src="img/bike2.png" class="img-responsive" alt="Bike Social Media">
+                      <img src="img/bike3.jpg" class="img-responsive" alt="Bike Event Day">
+                      <img src="img/bike4.jpg" class="img-responsive" alt="Bike Giveaway Items">
+                    </div>
                   </div>
                 </div>
-              </div>
-          </div>
-
-          <div class="col-sm-6">
-            <button type="button" class="work-btn work-zcard" data-toggle="modal" data-target=".zcard"></button>
-            <div class="modal fade zcard" data-dismiss="modal" tabindex="-1" role="dialog" aria-labelledby="Z Card Design" aria-hidden="true">
+            </div>
+            <div class="col-sm-3 padding-none">
+              <a href="#" class="work-btn work-zcard" data-toggle="modal" data-target=".zcard"><img src="img/work-zcard.jpg" class="img-responsive work-img" />
+                <p class="imgDescription text-center">West Rail Line Z Card</p>
+              </a>
+              <div class="modal fade zcard" data-dismiss="modal" tabindex="-1" role="dialog" aria-labelledby="Z Card Design" aria-hidden="true">
                 <div class="modal-dialog modal-lg">
                   <div class="modal-content">
                     <button type="button" data-dismiss="modal" class="close">x</button>
@@ -205,24 +534,23 @@
                   </div>
                 </div>
               </div>
+            </div>
           </div>
-
         </div>
       </div>
     </div>
-
-    <div data-scroll-index="3">
+    <div data-scroll-index="3" class="contact-me">
       <div class="container">
         <div class="row marketing">
-          <h3>contact me</h3></br>
-          <p>I would love to hear from you! Please <a href="mailto:kitsudar@gmail.com" style="color:#4b4b4b; text-decoration: underline;">email me</a> with any work or freelance opportunities. Also, add me to any of these social network. Thank you for visiting my page!</p>
-          <ul>
-            <li class="social"><a href="https://twitter.com/kitsudar" target="blank"><img src="img/twitter.svg" class="social-icon img-responsive" alt="Twitter"></a></li>
-            <li class="social"><a href="https://www.linkedin.com/in/kitsudar" target="blank"><img src="img/linkedin.svg" class="social-icon img-responsive" alt="Linkedin"></a></li>
-            <li class="social"><a href="https://www.facebook.com/kitsudar" target="blank"><img src="img/facebook.svg" class="social-icon img-responsive" alt="Facebook"></a></li>
-            <li class="social"><a href="https://www.pinterest.com/kitsudar" target="blank"><img src="img/pinterest.svg" class="social-icon img-responsive" alt="Pinterest"></a></li>
-            <li class="social"><a href="https://www.instagram.com/kitsudar" target="blank"><img src="img/instagram.svg" class="social-icon img-responsive" alt="Instagram"></a></li>
-
+          <div class="col-md-12 col-sm-12 col-xs-12">          
+            <h3 class="text-center">contact me</h3></br>
+            <p class="text-center">I would love to hear from you! Please <a href="mailto:kitsudar@gmail.com" style="color:#4b4b4b; text-decoration: underline;">email me</a> with any work or freelance opportunities. Find me on any of these social network.</p>
+            <ul class="list-inline text-center">
+              <li class="social"><a href="https://twitter.com/kitsudar" target="blank"><img src="img/twitter.svg" class="social-icon img-responsive" alt="Twitter"></a></li>
+              <li class="social"><a href="https://www.linkedin.com/in/kitsudar" target="blank"><img src="img/linkedin.svg" class="social-icon img-responsive" alt="Linkedin"></a></li>
+              <li class="social"><a href="https://www.pinterest.com/kitsudar" target="blank"><img src="img/pinterest.svg" class="social-icon img-responsive" alt="Pinterest"></a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -230,7 +558,7 @@
     <div class="site-footer">
     <div class="container">
       <footer class="footer">
-        <p>&copy; 2015 Kitsudar Somchana Design</p>
+        <p class="text-inverse">&copy; 2017 Kitsudar Somchana Design</p>
       </footer>
 
     </div>
@@ -243,5 +571,18 @@
     <script src="js/scroll.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script>
+      jQuery(document).ready(function(){
+        jQuery('.skillbar').each(function(){
+          jQuery(this).find('.skillbar-bar').animate({
+            width:jQuery(this).attr('data-percent')
+          },6000);
+        });
+      });
+      $('.carousel').carousel({
+        interval: false
+      });
+
+    </script>
   </body>
 </html>
