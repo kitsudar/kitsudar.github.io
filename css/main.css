@@ -26,12 +26,26 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+/* Nav bar */
+.navbar-default {
+  border-color: #fff;
+  padding-top: 20px;
+  padding-bottom: 14px;
+}
+.navbar-toggle {
+  margin-top: 20px;
+}
+.navbar-collapse {
+  text-align: right;
+}
+.navbar-default .navbar-collapse {
+  border-color: #fff;
+}
+
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
 .footer {
-  padding-right: 15px;
-  padding-left: 15px;
 }
 
 /* Custom page header */
@@ -59,16 +73,16 @@ h1 a:hover, a:visited, a:link, a:active
 .navbar {
   background-color: #fff;
 }
-
+.masthead-nav {
+  margin-top: 20px;
+}
 .masthead-nav > li {
   display: inline-block;
 }
 .masthead-nav > li + li {
-  margin-left: 20px;
+  margin-left: 15px;
 }
 .masthead-nav > li > a {
-  padding-right: 0;
-  padding-left: 0;
   font-size: 16px;
   font-weight: bold;
   color: #4b4b4b; /* IE8 proofing */
@@ -87,46 +101,67 @@ h1 a:hover, a:visited, a:link, a:active
   color: #4b4b4b;
   border-bottom-color: #4b4b4b;
 }
+/* About me */
+.profile-pic {
+  height: 175px;
+  width: 175px;
+  margin-bottom: 20px;
+}
 
 /* my work */
+.margin-none {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.margin-top-lg {
+  margin-top: 35px;
+}
+
+.margin-bottom-md {
+  margin-bottom: 15px;
+}
+
+.padding-none {
+  padding: 0px;
+}
+
 .work-btn {
+  position: relative;
+  padding: 0;
+  background-color: #494949;
   width: 100%;
-  padding: 120px 10px;
-  margin: 20px 0px;
-  border: none;
-  display: inline-block;
+  height: 100%;
+  display: block;
 }
 
-.work-rtd {
-  background: url("../img/work-rtd.jpg") no-repeat;
+.imgDescription {
+  background: #494949;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  font-size: 18px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-top: 28%;
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .5s;
 }
 
-.work-preopen {
-  background: url("../img/work-preopen.jpg") no-repeat;
+.work-btn:hover .imgDescription {
+  visibility: visible;
+  opacity: .9;
 }
 
-.work-daravadee {
-  background: url("../img/work-daravadee.jpg") no-repeat; 
-}
-
-.work-od {
-  background: url("../img/work-od.jpg") no-repeat;
-}
-
-.work-0 {
-  background: url("../img/work-0.jpg") no-repeat;
-}
-
-.work-rnr {
-  background: url("../img/work-rnr.jpg") no-repeat;
-}
-
-.work-bike {
-  background: url("../img/work-bike.png") no-repeat;
-}
-
-.work-zcard {
-  background: url("../img/work-zcard.jpg") no-repeat;
+.work-img {
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+  padding: 0px;
 }
 
 .modal-dialog {
@@ -160,6 +195,41 @@ button.close {
   margin-right: -35px;
 }
 
+/* Carousal */
+.carousel-control.right{
+  background-image: none;
+  color: #979797;
+}
+.carousel-control.left{
+  background-image: none;
+    color: #979797;
+}
+.carousel-indicators .active {
+  background-color: #494949;
+}
+.carousel-indicators li {
+  border: 1px solid #494949;
+}
+ol.carousel-indicators {
+  margin-bottom: -5px;
+}
+/* Court Reports */
+.court-report {
+  border-right: 1px solid #cdcdcd;
+  border-left: 1px solid #cdcdcd;
+  border-bottom: 1px solid #cdcdcd;
+  margin-bottom: 50px;
+  margin-top: -10px;
+}
+
+/* Preopen */
+.preopen-work {
+  border-right: 1px solid #cdcdcd;
+  border-left: 1px solid #cdcdcd;
+  margin-top: -10px;
+  margin-bottom: -10px;
+}
+
 @media (min-width: 768px) {
   .masthead-brand {
     float: left;
@@ -167,6 +237,43 @@ button.close {
   .masthead-nav {
     float: right;
   }
+}
+
+/* iMac screen scroll */
+.demo-link {
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  line-height: 70px;
+  display: block;
+}
+
+.frame {
+  position: relative;
+  z-index: 5;
+}
+
+.layout {
+  position: absolute;
+  top:5%;
+  left: 28%;
+  width: 90.9%;
+  height: 0;
+  padding-bottom: 35.25%;
+  overflow: hidden;
+}
+
+.layout img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  max-width: 50%;
+}
+
+.demo-link:hover .layout img {
+  transform: translate3d(0, -91%, 0);
+  transition: transform 6s linear;
 }
 
 /* Make the masthead heading the same height as the navigation */
@@ -181,35 +288,45 @@ button.close {
 .social {
   list-style-type: none;
   padding: 20px;
-  float: left;
-
 }
 
 
 
 /* Custom page footer */
-.footer {
+.footer p {
 /*  padding-top: 19px;*/
-  color: #777;
+  color: #fff;
   text-align: center;
 }
 
 .site-footer {
   text-align: center;
-  margin-top: 40px;
-  background-color: #dddddf;
+  background-color: #4b4b4b;
   padding-top: 20px;
   margin-bottom: -50px;
+}
+
+@media (max-width: 768px) {
+    .layout {
+  padding-bottom: 39.25%;
+  }
 }
 
 /* Customize container */
 @media (min-width: 768px) {
   .container {
-    max-width: 730px;
+    max-width: 840px;
   }
 }
 .container-narrow > hr {
   margin: 30px 0;
+}
+
+/* my work */
+.container-work {
+  margin-top: 120px;
+  margin-bottom: 120px;
+  width:  100%;
 }
 
 /* Main marketing message and sign up button */
@@ -217,14 +334,21 @@ button.close {
   text-align: center;
   padding-top: 100px;
   padding-bottom: 60px;
-  margin-bottom: 100px;
   background-color: #ceecec;
+}
 
+.jumbotron p {
+  font-weight: 300;
+}
+
+/* Workspace Image */
+.workspace-pic {
+  margin-top: -30px;
 }
 
 /* Supporting marketing content */
 .marketing {
-  margin: 80px 0 200px 0;
+  margin: 80px 0 90px 0;
   float: center;
 }
 .marketing p + h3 {
@@ -236,10 +360,10 @@ button.close {
   color: #d61717;
 }
 
-.profile-pic img {
-  float: left;
-  margin-right: 10px;
-  clear: both;
+/* Contact me */
+.contact-me {
+  background-color: #dddddf;
+  margin-top: 40px;
 }
 
 /* Responsive: Portrait tablets and up */
@@ -259,6 +383,9 @@ button.close {
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
     border-bottom: 0;
+  }
+    .layout {
+  padding-bottom: 53.25%;
   }
 }
 
@@ -281,14 +408,97 @@ button.close {
   .masthead,
   .mastfoot,
   .container {
-    width: 700px;  Must be percentage or pixels for horizontal alignment 
+    width: 840px;  Must be percentage or pixels for horizontal alignment 
   }
+  .layout {
+  padding-bottom: 53.25%;
+  }
+
 }
 
 @media (min-width: 1350px) {
   .masthead,
   .mastfoot,
   .container {
-    max-width: 730px;
+    max-width: 840px;
   }
+}
+
+/* Skills Animation */
+p {
+  color:#525252;
+  font-size:14px;
+}
+
+.skillbar {
+  position:relative;
+  display:block;
+  margin-bottom:15px;
+  width:100%;
+  background:#eee;
+  height:25px;
+  border-radius:3px;
+  -moz-border-radius:3px;
+  -webkit-border-radius:3px;
+  -webkit-transition:0.4s linear;
+  -moz-transition:0.4s linear;
+  -ms-transition:0.4s linear;
+  -o-transition:0.4s linear;
+  transition:0.4s linear;
+  -webkit-transition-property:width, background-color;
+  -moz-transition-property:width, background-color;
+  -ms-transition-property:width, background-color;
+  -o-transition-property:width, background-color;
+  transition-property:width, background-color;
+}
+
+.skillbar-title {
+  position:absolute;
+  top:0;
+  left:0;
+  width:110px;
+  font-weight:bold;
+  font-size:13px;
+  color:#ffffff;
+  background:#6adcfa;
+  -webkit-border-top-left-radius:3px;
+  -webkit-border-bottom-left-radius:4px;
+  -moz-border-radius-topleft:3px;
+  -moz-border-radius-bottomleft:3px;
+  border-top-left-radius:3px;
+  border-bottom-left-radius:3px;
+}
+
+.skillbar-title span {
+  display:block;
+  background:rgba(0, 0, 0, 0.1);
+  height:25px;
+  line-height:25px;
+  -webkit-border-top-left-radius:3px;
+  -webkit-border-bottom-left-radius:3px;
+  -moz-border-radius-topleft:3px;
+  -moz-border-radius-bottomleft:3px;
+  border-top-left-radius:3px;
+  border-bottom-left-radius:3px;
+  padding-left: 10px;
+}
+
+.skillbar-bar {
+  height:25px;
+  width:0px;
+  background:#6adcfa;
+  border-radius:3px;
+  -moz-border-radius:3px;
+  -webkit-border-radius:3px;
+}
+
+.skill-bar-percent {
+  position:absolute;
+  right:10px;
+  top:0;
+  font-size:11px;
+  height:25px;
+  line-height:28px;
+  color:#ffffff;
+  color:rgba(0, 0, 0, 0.4);
 }
