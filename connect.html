@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>DesignKIT</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,300italic' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/main.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-6">
+          <h1><a href="index.html">design<span class="kit">kit</a></h1>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-6">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav masthead-nav pull-right">
+                  <li><a href="index.html#aboutme">about</a></li>
+                  <li><a href="index.html#mywork">my work</a></li>
+                  <li><a href="index.html#contactme">contact</a></li>
+              </ul>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <a href="help-site.html" type="button" class="btn btn-link pull-right margin-top-xlg">Next project <span class="glyphicon glyphicon-chevron-right"></span></a>
+        <a href="oyfs-feasibility.html" type="button" class="btn btn-link pull-left margin-top-xlg"><span class="glyphicon glyphicon-chevron-left"></span> Previous project</a>
+      </div>
+      <div class="col-md-12 col-sm-12 col-xs-12">
+          <h3 class="margin-top-lg">Connect Mobile App</h3>
+            <h4 class="margin-top-lg">The Problem</h4>
+              <p>Parents of school age children can find it difficult to connect with their children’s teachers and other parents in their classroom.</p>
+
+              <h4 class="margin-top-lg">The Solution</h4>
+              <p>A vision for the app ‘Connect’ is for parents to be able to communicate with the teachers and other parents more effectively and bringing school community together in one place.</p>
+
+              <h4 class="margin-top-lg">The Project</h4>
+              <p>A competitive analysis was conducted to review and compare online sites and applications in the relevant marketplace. The goal was to identify any opportunities or gaps that aligned with our app’s value proposition that might allow for a quick win using a “Lean” approach for releasing a minimum viable product. The key experiences are parents can receive updates and photos of their kids from the teacher throughout the day. They can sign up for teacher/parent conference right in the app. The parents can connect with other parents in the classroom to plan activities.</p>
+              <h4 class="margin-top-lg">Wireframes</h4>
+              <img src="img/connect-wireframe1.jpg" class="img-responsive img-width center-block" alt="Connect Wireframe 1">
+              <br />
+              <img src="img/connect-wireframe2.jpg" class="img-responsive img-width center-block" alt="Connect Wireframe 2">
+              <br />
+              <h4 class="margin-top-lg">High fidelity prototype</h4>
+              <img src="img/connect-screens.jpg" class="img-responsive img-width center-block" alt="Connect Screens">
+              <br />
+              <a href="help-site.html" type="button" class="btn btn-link pull-right margin-top-xlg">Next project <span class="glyphicon glyphicon-chevron-right"></span></a>
+              <a href="oyfs-feasibility.html" type="button" class="btn btn-link pull-left margin-top-xlg"><span class="glyphicon glyphicon-chevron-left"></span> Previous project</a>
+        </div>
+    </div>
+  </div>
+
+    <div class="site-footer">
+    <div class="container">
+      <footer class="footer">
+        <p class="text-inverse">&copy; 2020 Kitsudar Somchana Design</p>
+      </footer>
+
+    </div>
+    </div> <!-- /container -->
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scrollIt.js"></script>
+    <script src="js/scroll.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script>
+      jQuery(document).ready(function(){
+        jQuery('.skillbar').each(function(){
+          jQuery(this).find('.skillbar-bar').animate({
+            width:jQuery(this).attr('data-percent')
+          },6000);
+        });
+      });
+      $('.carousel').carousel({
+        interval: false
+      });
+
+    </script>
+  </body>
+</html>
