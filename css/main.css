@@ -545,3 +545,15 @@ p {
   border: 1px solid #cdcdcd;
   margin-top: 20px;
 }
+
+@media screen and (max-width: 767px) {
+  /* Remove the padding we set earlier */
+  .xdprototype {
+    width: 345px;
+    height: 392px;
+  }
+  .ppt {
+    width: 290px;
+    height: 222px;
+  }
+}
