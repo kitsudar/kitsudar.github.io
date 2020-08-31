@@ -408,7 +408,7 @@ ol.carousel-indicators {
   .masthead,
   .mastfoot,
   .container {
-    width: 840px;  Must be percentage or pixels for horizontal alignment 
+    width: 840px;  Must be percentage or pixels for horizontal alignment
   }
   .layout {
   padding-bottom: 42.25%;
@@ -515,3 +515,33 @@ p {
   width: 850px;
 }
 
+.modal-text-block {
+  text-align: left;
+  margin-left: 20px;
+  width: 75%;
+}
+
+.margin-top-xlg {
+  margin-top: 50px;
+}
+
+.margin-top-lg {
+  margin-top: 30px;
+}
+
+.margin-bottom-xlg {
+  margin-bottom: 50px;
+}
+
+.margin-bottom-sm {
+  margin-bottom: 20px;
+}
+
+.padding-top-xlg {
+  padding-top: 50px;
+}
+
+.iframe-border {
+  border: 1px solid #cdcdcd;
+  margin-top: 20px;
+}
